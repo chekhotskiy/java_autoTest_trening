@@ -1,30 +1,29 @@
 package my_Packet;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class FirstProgram {
 
   public static void main(String[] args) {
     hello("world");
     hello("man");
+    
+    Square s = new Square(5);
+    System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-    double l = 5;
-    System.out.println("Площадь квадрата со стороной "+l+" = " + area(l));
+    Rectengle r = new Rectengle(2, 4);
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
-    double a = 2;
-    double b = 3;
-    System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a, b));
+    Point p = new Point(5,6,3,6);
+    System.out.println("Расстояние между точками p1 и p2 =" + p.d + ".");
 
   }
 
   public static void hello(String somebody) {
-    System.out.println("hello? " + somebody +".");
-
+    System.out.println("hello? " + somebody + ".");
   }
 
-  public static double area(double len) {
-    return  len * len;
-  }
 
-  public static double area(double a, double b){
-    return a+b;
-  }
+
 }

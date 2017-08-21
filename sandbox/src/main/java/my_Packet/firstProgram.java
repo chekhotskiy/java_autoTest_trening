@@ -8,7 +8,7 @@ public class FirstProgram {
   public static void main(String[] args) {
     hello("world");
     hello("man");
-    
+
     Square s = new Square(5);
     System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 

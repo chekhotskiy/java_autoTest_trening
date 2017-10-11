@@ -1,4 +1,4 @@
-package my_Packege;
+package my_Packege.model;
 
 public class ContactData {
   private final String first_name;

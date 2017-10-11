@@ -1,4 +1,4 @@
-package my_Packege;
+package my_Packege.model;
 
 public class GroupData {
   private final String name;

@@ -1,0 +1,3 @@
+include 'web_tests'
+includeFlat 'web_tests'
+
